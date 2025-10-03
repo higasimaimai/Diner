@@ -1,0 +1,30 @@
+header, nav, main, footer {
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+#myButton {
+    display: none;
+}
+ul.menulinks li a {
+    padding: .4rem 1rem;
+}
+ul.menulinks, ul.menulink.open {
+    display: flex;
+    justify-content: flex-end;
+}
+ul.menulinks a:hover {
+    background-color: $secondaryColor;
+}
+
+.allcards {
+    section {
+        flex-basis: calc(33.333% - (($gutter*2)/3));
+    }
+}
+
+footer div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

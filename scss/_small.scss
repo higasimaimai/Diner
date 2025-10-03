@@ -1,0 +1,186 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+  }
+  
+  /*---- apply a natural box layout model to all elements -------*/
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body{
+    height: 100%;
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    color: $fontColor;
+  }
+
+  #headerWrapper {
+    background-color: $accentColor;
+    color: $fontColor;
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-items: center;
+    padding: $gutter;
+    gap: 8px;
+    h1 {
+        margin: 0;
+        padding: 0;  
+        font-size: 32px;
+        font-weight: $normalWeight;
+        justify-content: space-between;
+        text-align: center;
+        color: $whiteColor;
+    }
+    p {
+      margin: 0;
+        font-size: 12px;
+        font-weight: $normalWeight;
+        margin-left: auto;
+    }
+  }
+
+nav {
+    background-color: $primaryColor;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton {
+    border: none;
+    background: none;
+    color: $secondaryColor;
+    font-size: 2rem;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    font-weight: $lightWeight;
+    cursor:pointer;
+}
+
+ul.menulinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    li a {
+        color: $fontColor;
+        display: block;
+        padding: .75rem $gutter;
+        text-decoration: none;
+    }
+    li.active a{
+        color: $whiteColor;
+        background-color: $secondaryColor;
+    }
+}
+
+ul.open.menulinks {
+    display: block;
+}
+#myButton.open::before {
+    content: "x";
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+.allcards {
+    padding: 0 $gutter;
+    section{
+        border: 2px solid $secondaryColor;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem 0;
+    h2, p, img {
+        margin: 0;
+        padding: 1rem $gutter; 
+    }
+    h2 {
+        background-color: $secondaryColor;
+        font-size: 1.5rem;
+        color: $whiteColor;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    img.e2e {
+        padding: 0;
+    }
+    p {
+       font-style: italic; 
+    }
+    a {
+        display: block;
+        background-color: $accentColor;
+        padding: .75rem;
+        text-align: center;
+        margin: 0 3rem 1rem 3rem;
+        border-radius: 8px;
+        color: $whiteColor;
+        text-decoration: none;
+    }
+}
+}
+
+#footerWrapper {
+    margin: 0;
+    padding: 20px 20px 0 20px;
+    background-color: $accentColor;
+    color: $whiteColor;
+}
+footer{
+    padding: 0.5 rem $gutter;
+    section.contact {
+        p{
+            font-size: 18px;}
+        ion-icon{
+            color: orange; 
+            padding-right: 7px;
+        }
+        a {
+            color: orange;
+        }
+    }
+    section.social {
+        display:flex;
+        justify-content: center;
+        a {
+        display: block;
+        border: sold 1px #666;
+        font-size: 2rem;
+        margin: .5rem;
+        padding: .5rem;
+        color: $whiteColor;
+        }
+        a:hover {
+            background-color: $secondaryColor;
+        }
+    }
+    section.location {
+        font-size: 1.5rem;
+    }
+    p.legal {
+        margin: 0;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: $normalWeight;
+        text-align: center;
+    }
+}

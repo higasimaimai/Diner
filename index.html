@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Samurai Diner</title>
+    <meta name="description" content="Diner">
+    <meta name="author" content="Micah Kariya">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
+    <!-- Fav icon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo1x.png" alt="logo" width="50" height="50">
+            <h1>Samurai Diner</h1>
+        </header>
+    </div>
+
+    <div id="navWrapper">
+        <nav>
+            <button id="myButton"></button>
+            <ul class="menulinks">
+                <li><a href="#">Our Kitchen</a></li>
+                <li class="active"><a href="#">Our Menu</a></li>
+                <li><a href="#">Catering</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainWrapper">
+        <main>
+            <h1>Our Menu</h1>
+            <div class="allcards">
+                <section>
+                    <h2>Onigiri</h2>
+                    <img src="images/onigiri.webp" alt="onigiri" width="300" height="175">
+                    <p>Onigiri are rice balls that can be filled with fish, pickled vegetables, or other tasty fillings. They’re a common Japanese snack, often wrapped in seaweed for easy eating.</p>
+                    <a href="#">View Ingredients</a>
+                </section>
+
+                <section>
+                    <h2>Sukiyaki</h2>
+                    <img src="images/sukiyaki.webp" alt="foodname" width="300" height="175">
+                    <p>Sukiyaki is a hot pot dish where thin beef slices, tofu, and vegetables are simmered in a sweet soy sauce broth. It’s often enjoyed at the table with family or friends.</p>
+                    <a href="#">View Ingredients</a>
+                </section>
+
+                <section>
+                    <h2>Sushi</h2>
+                    <img src="images/sushi.webp" alt="foodname" width="300" height="175">
+                    <p>Sushi combines vinegared rice with fresh fish, seafood, or vegetables in bite-sized pieces or rolls. It’s one of Japan’s most well-known dishes worldwide.</p>
+                    <a href="#">View Ingredients</a>
+                </section>
+
+                <section>
+                    <h2>Tempura</h2>
+                    <img src="images/tempura.webp" alt="foodname" width="300" height="175">
+                    <p>Tempura is seafood or vegetables dipped in a light batter and fried until golden and crispy. It’s usually served with dipping sauce or over rice or noodles.</p>
+                    <a href="#">View Ingredients</a>
+                </section>
+
+                <section>
+                    <h2>Tonkatsu</h2>
+                    <img src="images/Tonkatsu.webp" alt="foodname" width="300" height="175">
+                    <p>Tonkatsu is a breaded and deep-fried pork cutlet that’s crunchy on the outside and tender inside. It’s often served with shredded cabbage and a savory sauce.</p>
+                    <a href="#">View Ingredients</a>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <div>
+                <section class="contact">
+                    <p><ion-icon name="person-circle-outline"></ion-icon>Micah Kariya</p>
+                    <p><ion-icon name="restaurant-outline"></ion-icon>Samurai Diner</p>
+                    <p><ion-icon name="mail-outline"></ion-icon><a href="mailto:micahk@samurai.com">micahk@samurai.com</a></p>
+                    <p><ion-icon name="globe-outline"></ion-icon><a href="http://samurai-diner.com">http://samurai-diner.com</a></p>
+                    <p><ion-icon name="call-outline"></ion-icon><a href="tel:1234567890">123 456 7890</a></p>
+                </section>
+                <section class="social">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </section>
+                <section class="location">
+                    <address>123 S 4567 W <br> Provo, Utah 84601 <br>United State</address>
+                </section>
+            </div>
+            <p class="legal">&copy; <span id="year">x</span> &bull; Samurai Diner</p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
